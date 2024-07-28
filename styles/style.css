@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "Playfair Display Medium";
+    font-style: normal;
+    src: local("PlayfairDisplay Medium"),
+        local("PlayfairDisplay-Medium"),
+        url("/fonts/PlayfairDisplay-Medium.woff2") format("woff2"),
+        url("/fonts/PlayfairDisplay-Medium.woff") format("woff"),
+        url("/fonts/PlayfairDisplay-Medium.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Playfair Display SemiBold";
+    src: local("PlayfairDisplay SemiBold"),
+        local("PlayfairDisplay-SemiBold"),
+        url("/fonts/PlayfairDisplay-SemiBold.woff2") format("woff2"),
+        url("/fonts/PlayfairDisplay-SemiBold.woff") format("woff"),
+        url("/fonts/PlayfairDisplay-SemiBold.ttf") format("ttf");
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header-name {
+    font-family: "Playfair Display SemiBold", sans-serif;
+    font-size: 86px;
+    line-height: 103.2px;
+    text-align: left;    
+}
+
+.header-navigation-menu {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    text-align: center;
+    width: 109px;
+}
+
+.hero-section-name {
+    font-family: "Playfair Display Medium", sans-serif;
+    font-style: normal;
+    font-size: 86px;   
+    font-weight: 500; 
+    line-height: 103.2px;
+    text-align: center;
+}
+
+.hero-section {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: center;
+}
+
+.biography-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28.13px;
+    text-align: right;
+}
+
+.biography-name-hero {
+    font-family: "Playfair Display Medium", sans-serif;
+    font-style: normal;
+    font-size: 86px;   
+    font-weight: 500; 
+    line-height: 114.64px;
+    text-align: left;
+}
+
+.biography-opisanie {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    text-align: left;
+}
+
+.biography-citata {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 31.2px;
+    text-align: left;
+}
+
+.designers-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28.13px;
+    text-align: left;
+}
+
+.designers-name-hero {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-align: left;
+}
+
+.designers-from-skills {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-align: left;
+}
+
+.designers-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-align: left;
+}
+
+.testimonials-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28.13px;
+    text-align: right;
+}
+
+.testimonials-name-site {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-align: left;
+}
+
+.testimonials-site {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-align: left;
+}
+
+.testimonials-citata {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 38.4px;
+    text-align: center;
+}
+
+.strongpoints-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28.13px;
+    text-align: left;
+}
+
+.strongpoints-name-frame {
+    font-family: "Playfair Display Medium", sans-serif;
+    font-style: normal;
+    font-size: 86px;   
+    font-weight: 500; 
+    line-height: 86px;
+    text-align: left;
+}
+
+.strongpoints-spisok {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 40.8p;
+    text-align: left;
+}
+
+.footer-done {
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+}
+
+.contacts {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+}
+
+.logo {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21.09px;
+    text-align: center;
+}
+
+.logo-name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28.13px;
+    text-align: center;
+}
+
+.pricing {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-align: right;
+}
