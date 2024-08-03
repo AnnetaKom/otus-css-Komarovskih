@@ -17,12 +17,6 @@
         url("/fonts/PlayfairDisplay-SemiBold.ttf") format("ttf");
 }
 
-.roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
 ul {
     list-style-type: none;
 }
