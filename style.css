@@ -17,15 +17,100 @@
         url("/fonts/PlayfairDisplay-SemiBold.ttf") format("ttf");
 }
 
-ul {
-    list-style-type: none;
+.body-style {
+    width: 1440px;
+    height: 4574px;
+    margin: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0;
+    height: 100%;
+}
+
+.header-style{
+    width: 1397px;
+    height: 135px;
+    left: 23px;
+    gap: 20px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: 0px; 
+    box-sizing: border-box;     
+}
+
+.navigation {
+    width: 1195px;
+    height: 28px;
+    gap: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    flex: none;
+    order: 1;
+    flex-grow: 1;    
+}
+
+.biography-razmer {
+    width: 109px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;    
+}
+
+.designers-razmer {
+    width: 108px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.testimonials-razmer {
+    width: 139px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 2;
+    flex-grow: 0;    
+}
+
+.strongpoints-razmer {
+    width: 145px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 3;
+    flex-grow: 0;    
 }
 
 .header-name {
     font-family: "Playfair Display SemiBold", sans-serif;
     font-size: 86px;
-    line-height: 103.2px;
-    text-align: left;    
+    line-height: 120%;
+    text-align: left;
+    width: 182px;
+    height: 103px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .header-navigation-menu {
@@ -34,26 +119,47 @@ ul {
     font-size: 24px;
     font-weight: 500;
     line-height: 28.13px;
-    text-align: center;
-    width: 109px;
+    text-align: center;        
 }
 
-.hero-section-name {
+section.hero {    
+    width: 1440px;
+    height: 630px;    
+    background: url("./img/inside-weather.jpg") no-repeat center/cover;
+}
+
+section.hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.hero .hero-nazvanie {
+    width: 690px;
+    padding: 110px 1%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+section.hero .hero-section-name {
     font-family: "Playfair Display Medium", sans-serif;
     font-style: normal;
     font-size: 86px;   
     font-weight: 500; 
     line-height: 103.2px;
     text-align: center;
+    margin: 0;  
+    
 }
 
-.hero-section {
+section.hero .hero-section {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-size: 20px;
     font-weight: 500;
     line-height: 23.44px;
     text-align: center;
+    margin-top: 14px;
 }
 
 .biography-name {
@@ -233,4 +339,8 @@ ul {
     font-size: 16px;
     line-height: 18.75px;
     text-align: right;
+}
+
+ul {
+    list-style-type: none;
 }
