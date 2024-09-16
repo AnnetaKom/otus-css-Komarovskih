@@ -59,17 +59,6 @@ main {
     flex-grow: 1;    
 }
 
-.designers-razmer {
-    width: 108px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    text-decoration-line: underline;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
 .strongpoints-razmer {
     width: 145px;
     height: 28px;
@@ -266,16 +255,21 @@ section.hero .hero-section {
     margin-top: 18px;
 }
 
-.designers-name {
+.designers .section-title {
+    margin: 151px 0 0 140px;
+}
+
+.section-title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 24px;
     line-height: 28.13px;
     text-align: left;
+
 }
 
-.designers-name-hero {
+.designer__name {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -284,7 +278,7 @@ section.hero .hero-section {
     text-align: left;
 }
 
-.designers-from-skills {
+.designer__from {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -293,13 +287,113 @@ section.hero .hero-section {
     text-align: left;
 }
 
-.designers-text {
+.designer__skills {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     line-height: 18.75px;
     text-align: left;
+}
+
+    /* 
+    Элемент галерея
+    Свойство overflow: scroll hidden добавляет скролл и скрывает содержимое,
+    которое выпадает за пределы области элемента.
+    */
+.gallery {
+    margin-top: 0px;
+    overflow-x: scroll;
+    padding: 0 20px 10px;
+}
+
+    /* 
+    Обёртка для карточек галереи - unordered list
+    Использую фактически для смещения горизонтального скролла,
+    для исключения наложения скроллбара на содержимое нижней
+    строки футера карточки
+  */
+.gallery__wrapper {
+    margin: 30px 0 0 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    /* 
+    Выравниваем все элементы по вертикали в конец контейнера - вниз,
+    чтобы при изменении размеров изображение росло вверх и не смещало
+    подписи
+    */
+    align-items: flex-end;
+    list-style-type: none;
+    padding: 0;
+}
+
+.gallery__card {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery .designer {
+    font-size: 16px;
+}
+
+.gallery .designer__footer {
+    margin-top: 24px;
+    width: 335px;
+    align-self: flex-end;
+}
+
+.gallery .designer__footer p {
+    margin: 0;
+}
+
+.gallery__image-wrapper {
+    height: 440px;
+    width: 335px;
+    overflow: hidden;
+    transition: all 0.5s;
+    transform-origin: bottom;
+}
+
+.strong-point__card-image,
+.designer__image {
+    width: 100%;
+}
+
+.gallery__card_active {
+    width: 572px;
+}
+
+.gallery_animated .gallery__card_active .gallery__image-wrapper {
+    height: 538px;
+    width: 572px;
+}
+.gallery_animated
+    .gallery__card:not(.gallery__card_active):hover
+    .gallery__image-wrapper {
+    transform: scale(1.07);
+}
+
+.gallery_animated .gallery__card_active .strong-point__card-image,
+.gallery_animated .gallery__card:hover .strong-point__card-image {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.designer__name {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.designer__from {
+    font-weight: 400;
+}
+
+.designer__from strong {
+    font-weight: bold;
 }
 
 .testimonials {
