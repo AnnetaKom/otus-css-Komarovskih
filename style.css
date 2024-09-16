@@ -70,16 +70,6 @@ main {
     flex-grow: 0;
 }
 
-.testimonials-razmer {
-    width: 139px;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    flex: none;
-    order: 2;
-    flex-grow: 0;    
-}
-
 .strongpoints-razmer {
     width: 145px;
     height: 28px;
@@ -312,6 +302,23 @@ section.hero .hero-section {
     text-align: left;
 }
 
+.testimonials {
+    margin-top: 150px;
+    height: 760px;
+    padding-left: 139px;
+    display: grid;
+    grid-template-columns: 118px 34.5% 9% auto;
+    position: relative;
+}
+
+.testimonials-header {
+    width: 140px;    
+    display: grid;
+    grid-column-start: 3;
+    margin-left: 15px;
+    justify-content: space-between;
+}
+
 .testimonials-name {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -319,6 +326,19 @@ section.hero .hero-section {
     font-size: 24px;
     line-height: 28.13px;
     text-align: right;
+    writing-mode: vertical-lr;
+    transform-origin: center center;
+    transform: rotate(-180deg);
+    margin: 0;
+}
+
+.testimonials .links {
+    margin: 0;
+    width: 118px;
+    list-style: none;
+    order: -1;    
+    display: grid;
+    align-content: space-around;    
 }
 
 .testimonials-name-site {
@@ -337,6 +357,61 @@ section.hero .hero-section {
     font-size: 16px;
     line-height: 18.75px;
     text-align: left;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    
+}
+
+.testimonials-site:hover {
+    text-decoration: underline;
+}
+
+.link-header {
+    height: 190px;
+    margin: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    font-weight: bold;
+    display: grid;
+    grid-column-start: 1;    
+}
+
+.link-url {
+    height: 190px;
+    margin: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);    
+}
+
+.testimonials-image {
+    height: 100%;
+    max-width: 100%;
+    min-width: 300px;
+    justify-self: left;    
+    max-height: 100%;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    justify-content: center;
+    align-items: center;  
+    
+}
+
+.test-photo {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials-content {
+    display: grid;    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 451px;   
+    margin-left: 34px;
 }
 
 .testimonials-citata {
@@ -347,6 +422,23 @@ section.hero .hero-section {
     font-size: 32px;
     line-height: 38.4px;
     text-align: center;
+    width: 221px;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    margin-bottom: 20px;  
+    margin-top: 17px;
+    
+}
+
+.testimonials-photo {
+    height: 100%;
+    max-width: 100%;
+    min-width: 220px;
+    justify-self: start;    
+    max-height: 100%;
+    display: grid;
+    
 }
 
 .strongpoints-name {
