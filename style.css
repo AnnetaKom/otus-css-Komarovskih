@@ -585,6 +585,13 @@ section.strong-points .gallery__card--central {
 .footer-done {
     background-color: #0D0D0D;
     color: #FFFFFF;
+    height: 168px;
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .contacts {
@@ -593,7 +600,43 @@ section.strong-points .gallery__card--central {
     font-style: normal;
     font-size: 16px;
     line-height: 26px;
-    text-align: left;
+    text-align: left;    
+    width: 31%;
+    height: 28px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-left: 20px;
+    margin-top: 70px;
+    
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.footer-url {
+    margin: 0;
+}
+
+.footer-contact {
+    padding: 0;
+}
+
+.footer-logo {
+    width: 31%;
+    height: 28px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 20px;
+    margin-top: 70px;
+    
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
@@ -601,8 +644,8 @@ section.strong-points .gallery__card--central {
     font-weight: 500;
     font-style: normal;
     font-size: 18px;
-    line-height: 21.09px;
-    text-align: center;
+    line-height: 21.09px;    
+    margin: 0;
 }
 
 .logo-name {
@@ -610,8 +653,7 @@ section.strong-points .gallery__card--central {
     font-weight: 900;
     font-style: normal;
     font-size: 24px;
-    line-height: 28.13px;
-    text-align: center;
+    line-height: 28.13px;    
 }
 
 .pricing {
@@ -621,6 +663,24 @@ section.strong-points .gallery__card--central {
     font-size: 16px;
     line-height: 18.75px;
     text-align: right;
+
+    width: 31%;
+    height: 28px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin-left: 20px;
+    margin-top: 70px;    
+    align-self: stretch;
+    margin-right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-pricing {
+    margin: 0;
 }
 
 ul {
