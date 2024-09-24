@@ -23,7 +23,7 @@ main {
 
 .body-style {
     max-width: 100%;
-    height: 4574px;
+    height: 100%;
     margin: 0;
     box-sizing: border-box;
 }
@@ -709,6 +709,9 @@ ul {
     list-style-type: none;
 }
 
+.page-footer {
+    display: none;
+}
 
 @media screen and (max-width: 1024px) {
     .testimonials {
@@ -718,7 +721,7 @@ ul {
 
 @media screen and (max-width: 890px) {   
     .header-style {
-        width: 100%;
+        max-width: 100%;
         padding-right: 0;
     }
     .header-name {
@@ -732,11 +735,11 @@ ul {
         align-content: center;
         justify-items: end;
         column-gap: 5%;
-        margin-right: 5%;       
+        margin-right: 5%;
     }
 
-    section.hero {
-        width: 90vh;
+    .pricing {
+        margin-left: 0;
     }
 }
 
@@ -750,15 +753,10 @@ ul {
     }    
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (min-width: 350px) {
     .header-style {
         display: none;
-    }
-    .container {
-        min-width: 350px;
-        max-width: none;
-        margin: 0 auto;
-    }
+    }    
 
     section.hero {
         height: auto;
@@ -803,10 +801,11 @@ ul {
     .biography-image {
         order: 1;
         max-width: 100%;
-        height: 450px;
+        height: 420px;
         min-width: auto;
         overflow: hidden;
     }
+
     .biography-image > img {
         object-fit: cover;
         width: 100%;
@@ -877,6 +876,10 @@ ul {
         font-weight: 300;
     }
 
+    .biography-citata br {
+        display: none;
+    }
+
     .designers .section-title {
         margin: 80px auto 0 16px;
         text-align-last: left;
@@ -894,7 +897,7 @@ ul {
     .designers .gallery__card,
     .designers .gallery__card--active {    
         width: 310px;
-        height: 440px;
+        height: 550px;
         overflow: hidden;
     }
 
@@ -949,7 +952,7 @@ ul {
 
     .testimonials-content {
         justify-self: center;
-        margin-top: 3%;
+        margin-top: 5%;
         min-width: 100%;
         font-size: 30px;
         font-weight: 300;
@@ -1032,6 +1035,11 @@ ul {
         padding: 0 16px 0;
     }
 
+    .gallery__wrapper {
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+
     .strong-points .gallery .gallery__wrapper {
         align-items: start;
         column-gap: 16px;
@@ -1047,8 +1055,8 @@ ul {
         height: 450px;
     }
     
-    .strong-points .gallery__card {
-        width: 100%;
+    section.strong-points .gallery__card {
+        width: auto;
         height: 450px;
     }
 
@@ -1070,6 +1078,97 @@ ul {
         margin-top: 8px;
         height: 29px;
         margin-left: 3%;
+    }
+
+    .page-footer {
+        display: block;
+        position: sticky;
+        width: auto;
+        background-color: #fff;
+        bottom: 0;
+        margin-top: 80px;
+        display: block;
+        height: 82px;
+        padding: 0 16px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+    
+    .page-footer .page-footer__navigation {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+    }
+    
+    .page-footer__links {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+    
+        font-family: "Bitter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    
+    .page-footer .links__item {
+        width: 92px;
+        height: 82px;
+        line-height: 82px;
+        text-align: center;
+    }
+    
+    .page-footer .links__link {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .page-footer .links__link:hover {
+        text-decoration: underline;
+    }
+    
+    .page-footer .links__link:active {
+        font-weight: 700;
+    }
+
+    .footer-done {
+        max-height: 193px;
+        height: fit-content;
+        position: absolute;
+        margin-top: 70px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer-logo {
+        width: 95%;        
+        order: 1;
+        margin-top: 10%;
+        padding-right: 10%;
+        justify-content: end;
+    }
+
+    .contacts {
+        width: 95%;
+        order: 2;
+        margin-top: 0;
+        margin-left: 3%;
+        justify-content: left;
+    }
+
+    .pricing {
+        width: 100%;
+        order: 3;
+        margin-top: 0;
+        margin-left: 3%;
+        margin-bottom: 35px;
+        justify-content: left;
     }
 
     /*@supports (display: grid) {
@@ -1114,9 +1213,5 @@ ul {
         transform-origin: center center;
         transform: none;
         margin: 0;
-    }
-
-    .pricing {
-        margin-left: 0;
-    }
+    }    
 }    
